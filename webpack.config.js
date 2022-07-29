@@ -3,16 +3,10 @@ const path = require('path');
 module.exports = {
   mode: 'development',
   devtool: 'inline-source-map',
-  entry:{
-    index: './src/index.js',
-    home: './src/home.js',
-    menu: './src/menu.js',
-    contact: './src/contact.js'
-  },
+  entry: './src/index.js',
   output:{
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
-    clean: true,
   },
 
   module:{
@@ -26,5 +20,5 @@ module.exports = {
         type: 'asset/resource',
       }
     ]
-  }
+  },
 }
