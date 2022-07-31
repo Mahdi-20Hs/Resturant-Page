@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Uchen&display=swap');
 *{
   padding: 0%;
   margin: 0%;
   box-sizing: border-box;
+  font-family: 'Playfair Display', serif;
 }
 body{
   height: 100vh;
@@ -36,8 +38,4 @@ body{
 .nav .logo{
   margin-right: auto;
   font-size: 2.5rem;
-}
-.container{
-  grid-column: 1fr;
-  grid-row: 2/-1;
 }

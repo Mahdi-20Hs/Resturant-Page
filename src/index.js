@@ -1,4 +1,5 @@
 import './styles/main.css';
-import './styles/home.css';
-import renderHome from './home';
-renderHome()
+import { init } from './menu';
+import './styles/menu.css'
+
+init();
