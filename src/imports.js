@@ -15,4 +15,14 @@ import {showInfo, hideInfo} from './dish-info.js'
 
 let menuImports = {bratwurstImg, rouladenImg, käsespätzleImg, eintopfImg, sauerbratenImg, kartoffelpufferImg, brezelImg, schnitzelImg, schwarzwälderKirschtorteImg, apfelstrudelImg, labskausImg, dönerKebabImg, showInfo, hideInfo}
 
-export {menuImports}
+export {menuImports};
+
+
+import twitterImg from './img/twitter-svgrepo-com (1).svg';
+import facebookImg from './img/facebook-svgrepo-com (1).svg';
+import instagramImg from './img/instagram-svgrepo-com.svg';
+import youtubeImg from './img/youtube-svgrepo-com (1).svg';
+
+let contactImports = {twitterImg, facebookImg, instagramImg, youtubeImg};
+
+export {contactImports};

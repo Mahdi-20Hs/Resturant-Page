@@ -1,5 +1,4 @@
 import './styles/main.css';
-import { init } from './menu';
-import './styles/menu.css'
-
-init();
+import './styles/contact.css'
+import renderContact from './contact';
+renderContact();

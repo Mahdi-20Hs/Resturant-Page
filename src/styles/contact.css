@@ -1,0 +1,65 @@
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #b57d51;
+}
+
+.contactContainer{
+  width: 500px;
+  height: 60%;
+  background-image: radial-gradient(rgb(17, 17, 17), black);
+  border: 1px solid white;
+  padding: 16px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.contactContainer div{
+  width: 300px;
+}
+.contactContainer div h3{
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+  text-align: center;
+  font-weight: normal;
+}
+.contactContainer div p{
+  text-align: center;
+  font-size: 1.1rem;
+}
+.socialMedia{
+  display: flex;
+  gap: 16px;
+  margin-top: 20px;
+  justify-content: center;
+}
+.socialMedia div{
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  filter: invert(13%) sepia(11%) saturate(14%) hue-rotate(337deg) brightness(94%) contrast(97%);
+}
+.socialMedia div:hover{
+  filter: none;
+}
+.twitter{
+  background-image: url(../img/twitter-svgrepo-com\ \(1\).svg);
+  background-size: cover;
+}
+.facebook{
+  background-image: url(../img/facebook-svgrepo-com\ \(1\).svg);
+  background-size: cover;
+}
+.instagram{
+  background-image: url(../img/instagram-svgrepo-com.svg);
+  background-size: cover;
+}
+.youtube{
+  background-image: url(../img/youtube-svgrepo-com\ \(1\).svg);
+  background-size: cover;
+}
+
+
