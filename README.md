@@ -1,7 +1,7 @@
-# resturant-page
+# restaurant-page
 
 ## Overview:
-This is another project from TOP curriculum it is aout a resturant website that has three pages home page, menu page and contact page. The menu page contains a list of multiple different German dishes, each dish can be clicked to show a brief description of the dish and it's price.
+This is another project from TOP curriculum it is aout a restaurant website that has three pages home page, menu page and contact page. The menu page contains a list of multiple different German dishes, each dish can be clicked to show a brief description of the dish and it's price.
 
 The main purpose of this project is to practice using ES6 modules and multiple tools like npm to install different packages and webpack to bundle multiple JS modules into one file that is compatible with the browser. I also got a better understanding of how should the project be structured and designed in a way that keep everything flexible and loosly attached to other components of the project.
 
