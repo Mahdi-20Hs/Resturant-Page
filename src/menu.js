@@ -1,9 +1,6 @@
 import { menuImports } from "./imports";
 const container = document.querySelector('.container');
 
-
-
-
 function CreateDish(name, info, price, img){
   const dish = {};
   dish.name = name;
@@ -12,7 +9,6 @@ function CreateDish(name, info, price, img){
   dish.img = img;
   return dish
 }
-
 
 const wurst = CreateDish('Wurst', ' a type of meat product usually made from ground meat—often pork, beef, or poultry—along with salt, spices and other flavourings.', '10$', menuImports.bratwurstImg);
 
@@ -39,7 +35,8 @@ const labskaus = CreateDish('Labskaus', 'a beef dish. German sailors in the 18th
 const dönerKebab = CreateDish('Döner kebab', 'Döner kebab was introduced to Germany by Turkish immigrant workers it contains meat, onions and a bit of salad', '5$', menuImports.dönerKebabImg)
 
 const dishes = [wurst, rouladen, käsespätzle, eintopf, sauerbraten, kartoffelpuffer, brezel, schnitzel, schwarzwälderKirschtorte, apfelstrudel, labskaus, dönerKebab];
-const dishElements = [];
+
+let dishElements = [];
 
 function createElements(type, className, content){
   const ele = document.createElement(`${type}`);
@@ -63,6 +60,8 @@ function createDishElement(dish){
 }
 
 function renderDishes(){
+  dishContainer.innerHTML = '';
+  dishElements = [];
   for(let i of dishes){
     const dish = createDishElement(i);
     dishContainer.appendChild(dish);
@@ -71,7 +70,6 @@ function renderDishes(){
 }
 
 function bindEvents(){
-
   dishElements.forEach((ele) => {
     ele.addEventListener('click', () => {
       let index = dishElements.indexOf(ele);
@@ -85,12 +83,12 @@ function bindEvents(){
   
 }
 
-function init(){
+function renderMenu(){
   renderDishes();
   bindEvents();
   container.appendChild(dishContainer);
 }
 
-export {init};
+export default renderMenu;
 
 

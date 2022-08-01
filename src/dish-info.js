@@ -1,3 +1,15 @@
+const container = document.querySelector('.container');
+
+let infoContainer;
+let info;
+
+let infoHeader;
+let infoImg;
+let infoDescription;
+let infoPrice;
+let closeBtn;
+let orderBtn;
+
 function createElements(type, className, content){
   const ele = document.createElement(`${type}`);
   if(className){
@@ -9,22 +21,13 @@ function createElements(type, className, content){
   return ele
 }
 
-const container = document.querySelector('.container');
-
-const infoContainer = createElements('div', 'infoContainer');
-const info = createElements('div', 'info');
-
-let infoHeader;
-let infoImg;
-let infoDescription;
-let infoPrice;
-let closeBtn;
-let orderBtn;
-
-infoContainer.appendChild(info);
-container.appendChild(infoContainer);
-
 function showInfo(dish){
+  infoContainer = createElements('div', 'infoContainer');
+  info = createElements('div', 'info');
+
+  infoContainer.appendChild(info);
+  container.appendChild(infoContainer);
+
   infoHeader = createElements('h2', undefined, dish.name);
   infoImg = createElements('div', 'infoImg');
   infoImg.setAttribute('style', `background-image: url(${dish.img})`)
@@ -33,6 +36,8 @@ function showInfo(dish){
   closeBtn = createElements('button', 'closeBtn', 'X');
   orderBtn = createElements('button', 'orderBtn', 'Order');
 
+  infoContainer.classList.add('active-container');
+  info.classList.add('active-info');
 
   info.appendChild(infoHeader);
   info.appendChild(infoImg);
@@ -40,9 +45,6 @@ function showInfo(dish){
   info.appendChild(infoPrice);
   info.appendChild(closeBtn);
   info.appendChild(orderBtn);
-
-  infoContainer.classList.add('active-container');
-  info.classList.add('active-info');
 }
 
 function hideInfo(){

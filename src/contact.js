@@ -18,7 +18,7 @@ const contactContainer = createElements('div', 'contactContainer');
 
 const address = createElements('div', 'address');
 const addressHeader = createElements('h3', undefined, 'Address: ');
-const addressInfo = createElements('p', undefined, '4289 Bridge Avenue, Roanoke, La, USA');
+const addressInfo = createElements('p', undefined, '828 Beacon St. Seattle, WA');
 address.appendChild(addressHeader);
 address.appendChild(addressInfo);
 contactContainer.appendChild(address);
@@ -42,6 +42,7 @@ const twitter = createElements('div', 'twitter');
 const facebook = createElements('div', 'facebook');
 const instagram = createElements('div', 'instagram');
 const youtube = createElements('div', 'youtube');
+
 socialMedia.appendChild(twitter);
 socialMedia.appendChild(facebook);
 socialMedia.appendChild(instagram);
